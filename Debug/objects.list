@@ -1,4 +1,5 @@
 "./Libraries/Lib_STD/Src/misc.o"
+"./Libraries/Lib_STD/Src/stm32f4xx_flash.o"
 "./Libraries/Lib_STD/Src/stm32f4xx_gpio.o"
 "./Libraries/Lib_STD/Src/stm32f4xx_rcc.o"
 "./Libraries/Lib_STD/Src/stm32f4xx_tim.o"

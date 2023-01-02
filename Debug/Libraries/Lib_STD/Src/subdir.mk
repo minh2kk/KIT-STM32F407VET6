@@ -6,6 +6,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Libraries/Lib_STD/Src/misc.c \
+../Libraries/Lib_STD/Src/stm32f4xx_flash.c \
 ../Libraries/Lib_STD/Src/stm32f4xx_gpio.c \
 ../Libraries/Lib_STD/Src/stm32f4xx_rcc.c \
 ../Libraries/Lib_STD/Src/stm32f4xx_tim.c \
@@ -13,6 +14,7 @@ C_SRCS += \
 
 OBJS += \
 ./Libraries/Lib_STD/Src/misc.o \
+./Libraries/Lib_STD/Src/stm32f4xx_flash.o \
 ./Libraries/Lib_STD/Src/stm32f4xx_gpio.o \
 ./Libraries/Lib_STD/Src/stm32f4xx_rcc.o \
 ./Libraries/Lib_STD/Src/stm32f4xx_tim.o \
@@ -20,6 +22,7 @@ OBJS += \
 
 C_DEPS += \
 ./Libraries/Lib_STD/Src/misc.d \
+./Libraries/Lib_STD/Src/stm32f4xx_flash.d \
 ./Libraries/Lib_STD/Src/stm32f4xx_gpio.d \
 ./Libraries/Lib_STD/Src/stm32f4xx_rcc.d \
 ./Libraries/Lib_STD/Src/stm32f4xx_tim.d \
@@ -33,7 +36,7 @@ Libraries/Lib_STD/Src/%.o Libraries/Lib_STD/Src/%.su: ../Libraries/Lib_STD/Src/%
 clean: clean-Libraries-2f-Lib_STD-2f-Src
 
 clean-Libraries-2f-Lib_STD-2f-Src:
-	-$(RM) ./Libraries/Lib_STD/Src/misc.d ./Libraries/Lib_STD/Src/misc.o ./Libraries/Lib_STD/Src/misc.su ./Libraries/Lib_STD/Src/stm32f4xx_gpio.d ./Libraries/Lib_STD/Src/stm32f4xx_gpio.o ./Libraries/Lib_STD/Src/stm32f4xx_gpio.su ./Libraries/Lib_STD/Src/stm32f4xx_rcc.d ./Libraries/Lib_STD/Src/stm32f4xx_rcc.o ./Libraries/Lib_STD/Src/stm32f4xx_rcc.su ./Libraries/Lib_STD/Src/stm32f4xx_tim.d ./Libraries/Lib_STD/Src/stm32f4xx_tim.o ./Libraries/Lib_STD/Src/stm32f4xx_tim.su ./Libraries/Lib_STD/Src/stm32f4xx_usart.d ./Libraries/Lib_STD/Src/stm32f4xx_usart.o ./Libraries/Lib_STD/Src/stm32f4xx_usart.su
+	-$(RM) ./Libraries/Lib_STD/Src/misc.d ./Libraries/Lib_STD/Src/misc.o ./Libraries/Lib_STD/Src/misc.su ./Libraries/Lib_STD/Src/stm32f4xx_flash.d ./Libraries/Lib_STD/Src/stm32f4xx_flash.o ./Libraries/Lib_STD/Src/stm32f4xx_flash.su ./Libraries/Lib_STD/Src/stm32f4xx_gpio.d ./Libraries/Lib_STD/Src/stm32f4xx_gpio.o ./Libraries/Lib_STD/Src/stm32f4xx_gpio.su ./Libraries/Lib_STD/Src/stm32f4xx_rcc.d ./Libraries/Lib_STD/Src/stm32f4xx_rcc.o ./Libraries/Lib_STD/Src/stm32f4xx_rcc.su ./Libraries/Lib_STD/Src/stm32f4xx_tim.d ./Libraries/Lib_STD/Src/stm32f4xx_tim.o ./Libraries/Lib_STD/Src/stm32f4xx_tim.su ./Libraries/Lib_STD/Src/stm32f4xx_usart.d ./Libraries/Lib_STD/Src/stm32f4xx_usart.o ./Libraries/Lib_STD/Src/stm32f4xx_usart.su
 
 .PHONY: clean-Libraries-2f-Lib_STD-2f-Src
 
